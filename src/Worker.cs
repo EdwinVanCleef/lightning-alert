@@ -8,17 +8,20 @@ namespace lightning_alert
         private readonly ILogger<Worker>? _logger;
         private readonly IConfiguration? _configuration;
         private readonly IProcessLightningAlertData _processLightningAlertData;
+        private readonly IHostApplicationLifetime? _applicationLifetime;
 
         private string? _inputFileFullPath;
         private string? _archiveFileFullPath;
 
         private readonly string? _zoomLevel;
 
-        public Worker(ILogger<Worker>? logger, IConfiguration? configuration)
+        public Worker(ILogger<Worker>? logger, IConfiguration? configuration, 
+            IHostApplicationLifetime? hostApplicationLifetime)
         {
             _logger = logger;
             _configuration = configuration;
             _processLightningAlertData = new ProcessLightningAlertData();
+            _applicationLifetime = hostApplicationLifetime;
 
             _zoomLevel = _configuration!.GetSection("ZoomLevel").Value;
 
@@ -52,6 +55,12 @@ namespace lightning_alert
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
+            if (!int.TryParse(_zoomLevel, out _) || _zoomLevel != "12")
+            {
+                _logger!.LogError("Invalid zoom level. Application only supports Zoom Level 12.", DateTimeOffset.Now);
+                _applicationLifetime!.StopApplication();
+            }
+
             while (!stoppingToken.IsCancellationRequested)
             {
                 _logger!.LogInformation("Lightning alert worker running at: {time}", DateTimeOffset.Now);

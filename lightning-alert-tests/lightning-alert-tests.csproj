@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\src\lightning-alert.csproj" />
+  </ItemGroup>
+
 </Project>

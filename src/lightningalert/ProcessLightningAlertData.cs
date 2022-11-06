@@ -2,6 +2,7 @@
 using lightning_alert.model;
 using lightning_alert.lightningalert.interfaces;
 using Newtonsoft.Json;
+using lightning_alert.data;
 
 namespace lightning_alert.lightningalert
 {
@@ -17,11 +18,18 @@ namespace lightning_alert.lightningalert
                 while ((line = reader.ReadLine()) != null)
                 {
                     var lightningData = JsonConvert.DeserializeObject<LightningStrikeData>(line);
-                    var quadKey = TileSystem.GetQuadKey(lightningData!.Longitude, lightningData.Latitude, 
+
+                    if (lightningData!.FlashType != Convert.ToInt32(FlashTypes.CloudToCloud) &&
+                        lightningData.FlashType != Convert.ToInt32(FlashTypes.CloudToGround))
+                    {
+                        continue;
+                    }
+
+                    var quadKey = TileSystem.GetQuadKey(lightningData!.Longitude, lightningData.Latitude,
                         zoomLevel);
                     var isQuadKeyExists = quadKeyListNotified.Where(x => x.Equals(quadKey)).Any();
 
-                    if (CheckQuadKeyIfInAsset(quadKey, isQuadKeyExists) && 
+                    if (CheckQuadKeyIfInAsset(quadKey, isQuadKeyExists) &&
                         !quadKeyListNotified.Where(x => x.Equals(quadKey)).Any())
                     {
                         quadKeyListNotified.Add(quadKey);
