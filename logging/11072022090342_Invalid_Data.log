@@ -1,0 +1,4 @@
+[Invalid FlashType] {"flashType":9,"strikeTime":1446761051071,"latitude":8.7009834,"longitude":-12.2791418,"peakAmps":7661,"reserved":"000","icHeight":12583,"receivedTime":1446761063462,"numberOfSensors":5,"multiplicity":1}
+[Invalid FlashType] {"flashType":9,"strikeTime":1446761054476,"latitude":33.1523893,"longitude":-97.9600051,"peakAmps":-1521,"reserved":"000","icHeight":12967,"receivedTime":1446761066512,"numberOfSensors":8,"multiplicity":9}
+[Invalid FlashType] {"flashType":9,"strikeTime":1446761094150,"latitude":32.9918144,"longitude":-98.3183717,"peakAmps":818,"reserved":"000","icHeight":17077,"receivedTime":1446761106125,"numberOfSensors":8,"multiplicity":1}
+[Invalid FlashType] {"flashType":9,"strikeTime":1446761096375,"latitude":32.9945683,"longitude":-98.2719279,"peakAmps":-6255,"reserved":"000","icHeight":18023,"receivedTime":1446761108149,"numberOfSensors":14,"multiplicity":20}

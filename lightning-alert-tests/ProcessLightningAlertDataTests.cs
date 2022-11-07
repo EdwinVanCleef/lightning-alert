@@ -28,11 +28,12 @@ namespace lightning_alert_tests
             var inputDirectory = config!.GetSection("Input:Filepath").Value;
             var inputFilename = config.GetSection("Input:FileName_Successful_Test").Value;
             var inputFileFullPath = Path.Combine(inputDirectory, inputFilename);
+            var logFilePath = config!.GetSection("LogFilePath").Value;
 
             const int ZOOM_LEVEL = 12;
             const int EXPECTED_NUMBER_OF_VALID_DATA = 4;
 
-            IProcessLightningAlertData processLightningAlertData = new ProcessLightningAlertData();
+            IProcessLightningAlertData processLightningAlertData = new ProcessLightningAlertData(logFilePath);
             processLightningAlertData.ReadLightningAlertData(inputFileFullPath, ZOOM_LEVEL);
             #endregion
 
@@ -53,11 +54,12 @@ namespace lightning_alert_tests
             var inputDirectory = config!.GetSection("Input:Filepath").Value;
             var inputFilename = config.GetSection("Input:FileName_Invalid_Test").Value;
             var inputFileFullPath = Path.Combine(inputDirectory, inputFilename);
+            var logFilePath = config!.GetSection("LogFilePath").Value;
 
             const int ZOOM_LEVEL = 12;
             const int EXPECTED_NUMBER_OF_VALID_DATA = 0;
 
-            IProcessLightningAlertData processLightningAlertData = new ProcessLightningAlertData();
+            IProcessLightningAlertData processLightningAlertData = new ProcessLightningAlertData(logFilePath);
             processLightningAlertData.ReadLightningAlertData(inputFileFullPath, ZOOM_LEVEL);
             #endregion
 
@@ -78,11 +80,12 @@ namespace lightning_alert_tests
             var inputDirectory = config!.GetSection("Input:Filepath").Value;
             var inputFilename = config.GetSection("Input:FileName_AllHeartbeat_Test").Value;
             var inputFileFullPath = Path.Combine(inputDirectory, inputFilename);
+            var logFilePath = config!.GetSection("LogFilePath").Value;
 
             const int ZOOM_LEVEL = 12;
             const int EXPECTED_NUMBER_OF_VALID_DATA = 0;
 
-            IProcessLightningAlertData processLightningAlertData = new ProcessLightningAlertData();
+            IProcessLightningAlertData processLightningAlertData = new ProcessLightningAlertData(logFilePath);
             processLightningAlertData.ReadLightningAlertData(inputFileFullPath, ZOOM_LEVEL);
             #endregion
 

@@ -1,5 +1,7 @@
 using lightning_alert.lightningalert;
 using lightning_alert.lightningalert.interfaces;
+using lightning_alert.logging;
+using lightning_alert.logging.Interfaces;
 
 namespace lightning_alert
 {
@@ -20,7 +22,7 @@ namespace lightning_alert
         {
             _logger = logger;
             _configuration = configuration;
-            _processLightningAlertData = new ProcessLightningAlertData();
+            _processLightningAlertData = new ProcessLightningAlertData(_configuration!.GetSection("LogFilePath").Value);
             _applicationLifetime = hostApplicationLifetime;
 
             _zoomLevel = _configuration!.GetSection("ZoomLevel").Value;
