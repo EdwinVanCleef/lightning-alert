@@ -92,9 +92,9 @@ There are 2 types of logs:
 2. Invalid Data - Logs all data with flash type not equal to 0 or 1.
 
 ## Built With
-.Net Core 6
-C#
-XUnit for unit testing
+1. .Net Core 6
+2. C#
+3. XUnit for unit testing
 
 ## Authors
 * **Joel Carlo Menor** 
