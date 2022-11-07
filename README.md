@@ -101,3 +101,22 @@ There are 2 types of logs:
 
 ## Acknowledgments
 * Hat tip to DTN software engineering team for this fun and challenging task.
+
+## Additional Questions
+1. What is the time complexity for determining if a strike has occurred for a particular asset?
+
+Here's how the application determines a strike for a particualr asset:
+1. Loop through the json stream 
+2. Validation for FlashType, it should be either 1 or 0
+3. I used the Bing Microsoft example on how to convert Longitude and Latitude to QuadKey
+4. I created a List<string> to store the alerted assets. This list is also the lookup for assets that have not been alerted yet. 
+I am using Linq Where here so it will only perform the check on the first match then it breaks and the list also starts small. 
+
+Two lookups but I used Linq Where which doesn't iterate the whole list every time because it stops at the first match. 
+The time complexity is O(n).
+
+2. If we put this code into production, but found it too slow, or it needed to scale to many more users or more frequent strikes, what are the first things you would think of to speed it up?
+
+For scaling, I have designed this application to be able to run multiple instances of it. It should help with scaling up. I may use a database to store the logging information. I may also use a queueing library so that if I ran multiple instances of it it will properly queue the data that has not been alerted or processed yet.
+Caching some data might also help. 
+
