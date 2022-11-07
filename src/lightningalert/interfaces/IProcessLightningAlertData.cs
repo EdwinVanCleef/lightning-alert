@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace lightning_alert.lightningalert.interfaces
 {
-    internal interface IProcessLightningAlertData
+    public interface IProcessLightningAlertData
     {
         Task ReadLightningAlertData(string filePath, int zoomLevel);
+        List<string> GetLightningAlertDataSuccessCount();
     }
 }

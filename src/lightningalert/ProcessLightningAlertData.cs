@@ -6,14 +6,19 @@ using lightning_alert.data;
 
 namespace lightning_alert.lightningalert
 {
-    internal sealed class ProcessLightningAlertData : IProcessLightningAlertData
+    public sealed class ProcessLightningAlertData : IProcessLightningAlertData
     {
+        private readonly List<string> _quadKeyListNotified;
+        public ProcessLightningAlertData()
+        {
+            _quadKeyListNotified = new List<string>();  
+        }
+
         public Task ReadLightningAlertData(string filePath, int zoomLevel)
         {
             using (var reader = new StreamReader(filePath))
             {
                 var line = string.Empty;
-                var quadKeyListNotified = new List<string>();
 
                 while ((line = reader.ReadLine()) != null)
                 {
@@ -27,17 +32,22 @@ namespace lightning_alert.lightningalert
 
                     var quadKey = TileSystem.GetQuadKey(lightningData!.Longitude, lightningData.Latitude,
                         zoomLevel);
-                    var isQuadKeyExists = quadKeyListNotified.Where(x => x.Equals(quadKey)).Any();
+                    var isQuadKeyExists = _quadKeyListNotified.Where(x => x.Equals(quadKey)).Any();
 
                     if (CheckQuadKeyIfInAsset(quadKey, isQuadKeyExists) &&
-                        !quadKeyListNotified.Where(x => x.Equals(quadKey)).Any())
+                        !_quadKeyListNotified.Where(x => x.Equals(quadKey)).Any())
                     {
-                        quadKeyListNotified.Add(quadKey);
+                        _quadKeyListNotified.Add(quadKey);
                     }
                 }
             }
 
             return Task.CompletedTask;
+        }
+
+        public List<string> GetLightningAlertDataSuccessCount()
+        {
+            return _quadKeyListNotified;
         }
 
         private static bool CheckQuadKeyIfInAsset(string quadKey, bool isQuadKeyExists)
