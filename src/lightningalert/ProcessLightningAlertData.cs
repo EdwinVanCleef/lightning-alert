@@ -50,7 +50,7 @@ namespace lightning_alert.lightningalert
                     var isQuadKeyExists = _quadKeyListNotified.Where(x => x.Equals(quadKey)).Any();
 
                     if (CheckQuadKeyIfInAsset(quadKey, isQuadKeyExists) &&
-                        !_quadKeyListNotified.Where(x => x.Equals(quadKey)).Any())
+                        !isQuadKeyExists)
                     {
                         _quadKeyListNotified.Add(quadKey);
                     }
