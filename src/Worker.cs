@@ -53,11 +53,25 @@ namespace lightning_alert
             }
         }
 
+        private static bool ValidateAssetPath()
+        {
+            string basePath = Environment.CurrentDirectory;
+            string assetsPath = Path.Combine(basePath, @"data\assets.json");
+
+            return File.Exists(assetsPath);
+        }
+
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             if (!int.TryParse(_zoomLevel, out _) || _zoomLevel != "12")
             {
                 _logger!.LogError("Invalid zoom level. Application only supports Zoom Level 12.", DateTimeOffset.Now);
+                _applicationLifetime!.StopApplication();
+            }
+
+            if (!ValidateAssetPath())
+            {
+                _logger!.LogError("Asset json file not found. Application requires this file.", DateTimeOffset.Now);
                 _applicationLifetime!.StopApplication();
             }
 

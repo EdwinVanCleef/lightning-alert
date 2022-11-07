@@ -8,7 +8,7 @@ namespace lightning_alert.tilesystem
 {
     // reference https://learn.microsoft.com/en-us/bingmaps/articles/bing-maps-tile-system?redirectedfrom=MSDN
 
-    static class TileSystem
+    public static class TileSystem
     {
         private const double MinLatitude = -85.05112878;
         private const double MaxLatitude = 85.05112878;

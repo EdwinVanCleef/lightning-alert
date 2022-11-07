@@ -1,6 +1,6 @@
 ﻿namespace lightning_alert.model
 {
-    internal sealed class LightningStrikeData
+    public sealed class LightningStrikeData
     {
         public int FlashType { get; set; }
         public long StrikeTime { get; set; }

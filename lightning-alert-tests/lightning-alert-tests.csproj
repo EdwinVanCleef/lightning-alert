@@ -27,4 +27,8 @@
     <ProjectReference Include="..\src\lightning-alert.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="TestData_Input\" />
+  </ItemGroup>
+
 </Project>

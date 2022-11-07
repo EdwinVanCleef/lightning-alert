@@ -8,17 +8,14 @@ namespace lightning_alert.lightningalert
 {
     public sealed class ProcessLightningAlertData : IProcessLightningAlertData
     {
-        private readonly List<string> _quadKeyListNotified;
-        public ProcessLightningAlertData()
-        {
-            _quadKeyListNotified = new List<string>();  
-        }
+        private List<string> _quadKeyListNotified = new List<string>();
 
         public Task ReadLightningAlertData(string filePath, int zoomLevel)
         {
             using (var reader = new StreamReader(filePath))
             {
                 var line = string.Empty;
+                _quadKeyListNotified = new List<string>();
 
                 while ((line = reader.ReadLine()) != null)
                 {

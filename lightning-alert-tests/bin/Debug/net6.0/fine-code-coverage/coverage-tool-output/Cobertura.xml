@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="0.266666666666667" branch-rate="0.176470588235294" lines-covered="60" lines-valid="225" branches-covered="6" branches-valid="34" complexity="63" version="0" timestamp="1667852444">
+  <sources>
+    <source>C:\Users\menor\</source>
+  </sources>
+  <packages>
+    <package name="lightning-alert" line-rate="0.245901639344262" branch-rate="0.176470588235294" complexity="57">
+      <classes>
+        <class name="lightning_alert.lightningalert.ProcessLightningAlertData" filename="C:\Users\menor\OneDrive\Documents\Projects\lightning-alert\src\lightningalert\ProcessLightningAlertData.cs" line-rate="0" branch-rate="0" complexity="16">
+          <methods>
+            <method name="ReadLightningAlertData" signature="(...)" line-rate="0" branch-rate="0" complexity="10">
+              <lines>
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="20" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="21" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="24" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="25" hits="0" branch="false" />
+                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="31" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
+                <line number="34" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="35" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+                <line number="37" hits="0" branch="false" />
+                <line number="38" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+                <line number="40" hits="0" branch="false" />
+                <line number="42" hits="0" branch="false" />
+                <line number="43" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="GetLightningAlertDataSuccessCount" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="46" hits="0" branch="false" />
+                <line number="47" hits="0" branch="false" />
+                <line number="48" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="CheckQuadKeyIfInAsset" signature="(...)" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="51" hits="0" branch="false" />
+                <line number="52" hits="0" branch="false" />
+                <line number="53" hits="0" branch="false" />
+                <line number="55" hits="0" branch="false" />
+                <line number="56" hits="0" branch="false" />
+                <line number="57" hits="0" branch="false" />
+                <line number="58" hits="0" branch="false" />
+                <line number="59" hits="0" branch="false" />
+                <line number="60" hits="0" branch="false" />
+                <line number="61" hits="0" branch="false" />
+                <line number="62" hits="0" branch="false" />
+                <line number="63" hits="0" branch="false" />
+                <line number="65" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="66" hits="0" branch="false" />
+                <line number="67" hits="0" branch="false" />
+                <line number="68" hits="0" branch="false" />
+                <line number="69" hits="0" branch="false" />
+                <line number="70" hits="0" branch="false" />
+                <line number="72" hits="0" branch="false" />
+                <line number="73" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="20" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="21" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="24" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="25" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+            <line number="34" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="35" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+            <line number="37" hits="0" branch="false" />
+            <line number="38" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+            <line number="42" hits="0" branch="false" />
+            <line number="43" hits="0" branch="false" />
+            <line number="46" hits="0" branch="false" />
+            <line number="47" hits="0" branch="false" />
+            <line number="48" hits="0" branch="false" />
+            <line number="51" hits="0" branch="false" />
+            <line number="52" hits="0" branch="false" />
+            <line number="53" hits="0" branch="false" />
+            <line number="55" hits="0" branch="false" />
+            <line number="56" hits="0" branch="false" />
+            <line number="57" hits="0" branch="false" />
+            <line number="58" hits="0" branch="false" />
+            <line number="59" hits="0" branch="false" />
+            <line number="60" hits="0" branch="false" />
+            <line number="61" hits="0" branch="false" />
+            <line number="62" hits="0" branch="false" />
+            <line number="63" hits="0" branch="false" />
+            <line number="65" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="66" hits="0" branch="false" />
+            <line number="67" hits="0" branch="false" />
+            <line number="68" hits="0" branch="false" />
+            <line number="69" hits="0" branch="false" />
+            <line number="70" hits="0" branch="false" />
+            <line number="72" hits="0" branch="false" />
+            <line number="73" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="lightning_alert.model.LightningAssetsData" filename="C:\Users\menor\OneDrive\Documents\Projects\lightning-alert\src\model\LightningAssetsData.cs" line-rate="0" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_AssetName" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_QuadKey" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_AssetOwner" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="0" branch="false" />
+            <line number="6" hits="0" branch="false" />
+            <line number="7" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="lightning_alert.model.LightningStrikeData" filename="C:\Users\menor\OneDrive\Documents\Projects\lightning-alert\src\model\LightningStrikeData.cs" line-rate="0" branch-rate="1" complexity="10">
+          <methods>
+            <method name="get_FlashType" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_StrikeTime" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Latitude" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Longitude" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_PeakAmps" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Reserved" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_IcHeight" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_ReceivedTime" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_NumberOfSensors" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Multiplicity" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="0" branch="false" />
+            <line number="6" hits="0" branch="false" />
+            <line number="7" hits="0" branch="false" />
+            <line number="8" hits="0" branch="false" />
+            <line number="9" hits="0" branch="false" />
+            <line number="10" hits="0" branch="false" />
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="lightning_alert.tilesystem.TileSystem" filename="C:\Users\menor\OneDrive\Documents\Projects\lightning-alert\src\tilesystem\TileSystem.cs" line-rate="1" branch-rate="1" complexity="11">
+          <methods>
+            <method name="Clip" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="12" branch="false" />
+                <line number="20" hits="12" branch="false" />
+                <line number="21" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="MapSize" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="3" branch="false" />
+                <line number="25" hits="3" branch="false" />
+                <line number="26" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="LatLongToPixelXY" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="29" hits="3" branch="false" />
+                <line number="30" hits="3" branch="false" />
+                <line number="31" hits="3" branch="false" />
+                <line number="33" hits="3" branch="false" />
+                <line number="34" hits="3" branch="false" />
+                <line number="35" hits="3" branch="false" />
+                <line number="37" hits="3" branch="false" />
+                <line number="38" hits="3" branch="false" />
+                <line number="39" hits="3" branch="false" />
+                <line number="40" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="PixelXYToTileXY" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="43" hits="3" branch="false" />
+                <line number="44" hits="3" branch="false" />
+                <line number="45" hits="3" branch="false" />
+                <line number="46" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="TileXYToQuadKey" signature="(...)" line-rate="1" branch-rate="1" complexity="6">
+              <lines>
+                <line number="49" hits="3" branch="false" />
+                <line number="50" hits="3" branch="false" />
+                <line number="51" hits="78" branch="true" condition-coverage="100% (2/2)" />
+                <line number="52" hits="36" branch="false" />
+                <line number="53" hits="36" branch="false" />
+                <line number="54" hits="36" branch="false" />
+                <line number="55" hits="36" branch="true" condition-coverage="100% (2/2)" />
+                <line number="56" hits="16" branch="false" />
+                <line number="57" hits="16" branch="false" />
+                <line number="58" hits="16" branch="false" />
+                <line number="59" hits="36" branch="true" condition-coverage="100% (2/2)" />
+                <line number="60" hits="19" branch="false" />
+                <line number="61" hits="19" branch="false" />
+                <line number="62" hits="19" branch="false" />
+                <line number="63" hits="19" branch="false" />
+                <line number="64" hits="36" branch="false" />
+                <line number="65" hits="36" branch="false" />
+                <line number="66" hits="3" branch="false" />
+                <line number="67" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="GetQuadKey" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="70" hits="3" branch="false" />
+                <line number="71" hits="3" branch="false" />
+                <line number="72" hits="3" branch="false" />
+                <line number="74" hits="3" branch="false" />
+                <line number="76" hits="3" branch="false" />
+                <line number="77" hits="3" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="12" branch="false" />
+            <line number="20" hits="12" branch="false" />
+            <line number="21" hits="12" branch="false" />
+            <line number="24" hits="3" branch="false" />
+            <line number="25" hits="3" branch="false" />
+            <line number="26" hits="3" branch="false" />
+            <line number="29" hits="3" branch="false" />
+            <line number="30" hits="3" branch="false" />
+            <line number="31" hits="3" branch="false" />
+            <line number="33" hits="3" branch="false" />
+            <line number="34" hits="3" branch="false" />
+            <line number="35" hits="3" branch="false" />
+            <line number="37" hits="3" branch="false" />
+            <line number="38" hits="3" branch="false" />
+            <line number="39" hits="3" branch="false" />
+            <line number="40" hits="3" branch="false" />
+            <line number="43" hits="3" branch="false" />
+            <line number="44" hits="3" branch="false" />
+            <line number="45" hits="3" branch="false" />
+            <line number="46" hits="3" branch="false" />
+            <line number="49" hits="3" branch="false" />
+            <line number="50" hits="3" branch="false" />
+            <line number="51" hits="78" branch="true" condition-coverage="100% (2/2)" />
+            <line number="52" hits="36" branch="false" />
+            <line number="53" hits="36" branch="false" />
+            <line number="54" hits="36" branch="false" />
+            <line number="55" hits="36" branch="true" condition-coverage="100% (2/2)" />
+            <line number="56" hits="16" branch="false" />
+            <line number="57" hits="16" branch="false" />
+            <line number="58" hits="16" branch="false" />
+            <line number="59" hits="36" branch="true" condition-coverage="100% (2/2)" />
+            <line number="60" hits="19" branch="false" />
+            <line number="61" hits="19" branch="false" />
+            <line number="62" hits="19" branch="false" />
+            <line number="63" hits="19" branch="false" />
+            <line number="64" hits="36" branch="false" />
+            <line number="65" hits="36" branch="false" />
+            <line number="66" hits="3" branch="false" />
+            <line number="67" hits="3" branch="false" />
+            <line number="70" hits="3" branch="false" />
+            <line number="71" hits="3" branch="false" />
+            <line number="72" hits="3" branch="false" />
+            <line number="74" hits="3" branch="false" />
+            <line number="76" hits="3" branch="false" />
+            <line number="77" hits="3" branch="false" />
+          </lines>
+        </class>
+        <class name="lightning_alert.Worker" filename="C:\Users\menor\OneDrive\Documents\Projects\lightning-alert\src\Worker.cs" line-rate="0" branch-rate="0" complexity="16">
+          <methods>
+            <method name="SetInputApplicationDirectoryPaths" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="32" hits="0" branch="false" />
+                <line number="33" hits="0" branch="false" />
+                <line number="34" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
+                <line number="37" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="38" hits="0" branch="false" />
+                <line number="39" hits="0" branch="false" />
+                <line number="40" hits="0" branch="false" />
+                <line number="41" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="SetArchiveApplicationDirectoryPaths" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="44" hits="0" branch="false" />
+                <line number="45" hits="0" branch="false" />
+                <line number="46" hits="0" branch="false" />
+                <line number="47" hits="0" branch="false" />
+                <line number="48" hits="0" branch="false" />
+                <line number="50" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="51" hits="0" branch="false" />
+                <line number="52" hits="0" branch="false" />
+                <line number="53" hits="0" branch="false" />
+                <line number="54" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="ValidateAssetPath" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="57" hits="0" branch="false" />
+                <line number="58" hits="0" branch="false" />
+                <line number="59" hits="0" branch="false" />
+                <line number="61" hits="0" branch="false" />
+                <line number="62" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+                <line number="23" hits="0" branch="false" />
+                <line number="24" hits="0" branch="false" />
+                <line number="26" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="ExecuteAsync" signature="()" line-rate="0" branch-rate="0" complexity="10">
+              <lines>
+                <line number="65" hits="0" branch="false" />
+                <line number="66" hits="0" branch="true" condition-coverage="0% (0/4)" />
+                <line number="67" hits="0" branch="false" />
+                <line number="68" hits="0" branch="false" />
+                <line number="69" hits="0" branch="false" />
+                <line number="70" hits="0" branch="false" />
+                <line number="72" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="73" hits="0" branch="false" />
+                <line number="74" hits="0" branch="false" />
+                <line number="75" hits="0" branch="false" />
+                <line number="76" hits="0" branch="false" />
+                <line number="78" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="79" hits="0" branch="false" />
+                <line number="80" hits="0" branch="false" />
+                <line number="82" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="83" hits="0" branch="false" />
+                <line number="84" hits="0" branch="false" />
+                <line number="85" hits="0" branch="false" />
+                <line number="87" hits="0" branch="false" />
+                <line number="88" hits="0" branch="false" />
+                <line number="91" hits="0" branch="false" />
+                <line number="93" hits="0" branch="false" />
+                <line number="94" hits="0" branch="false" />
+                <line number="96" hits="0" branch="false" />
+                <line number="98" hits="0" branch="false" />
+                <line number="99" hits="0" branch="false" />
+                <line number="101" hits="0" branch="false" />
+                <line number="102" hits="0" branch="false" />
+                <line number="104" hits="0" branch="false" />
+                <line number="106" hits="0" branch="false" />
+                <line number="107" hits="0" branch="false" />
+                <line number="108" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="24" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+            <line number="33" hits="0" branch="false" />
+            <line number="34" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="37" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="38" hits="0" branch="false" />
+            <line number="39" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+            <line number="41" hits="0" branch="false" />
+            <line number="44" hits="0" branch="false" />
+            <line number="45" hits="0" branch="false" />
+            <line number="46" hits="0" branch="false" />
+            <line number="47" hits="0" branch="false" />
+            <line number="48" hits="0" branch="false" />
+            <line number="50" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="51" hits="0" branch="false" />
+            <line number="52" hits="0" branch="false" />
+            <line number="53" hits="0" branch="false" />
+            <line number="54" hits="0" branch="false" />
+            <line number="57" hits="0" branch="false" />
+            <line number="58" hits="0" branch="false" />
+            <line number="59" hits="0" branch="false" />
+            <line number="61" hits="0" branch="false" />
+            <line number="62" hits="0" branch="false" />
+            <line number="65" hits="0" branch="false" />
+            <line number="66" hits="0" branch="true" condition-coverage="0% (0/4)" />
+            <line number="67" hits="0" branch="false" />
+            <line number="68" hits="0" branch="false" />
+            <line number="69" hits="0" branch="false" />
+            <line number="70" hits="0" branch="false" />
+            <line number="72" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="73" hits="0" branch="false" />
+            <line number="74" hits="0" branch="false" />
+            <line number="75" hits="0" branch="false" />
+            <line number="76" hits="0" branch="false" />
+            <line number="78" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="79" hits="0" branch="false" />
+            <line number="80" hits="0" branch="false" />
+            <line number="82" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="83" hits="0" branch="false" />
+            <line number="84" hits="0" branch="false" />
+            <line number="85" hits="0" branch="false" />
+            <line number="87" hits="0" branch="false" />
+            <line number="88" hits="0" branch="false" />
+            <line number="91" hits="0" branch="false" />
+            <line number="93" hits="0" branch="false" />
+            <line number="94" hits="0" branch="false" />
+            <line number="96" hits="0" branch="false" />
+            <line number="98" hits="0" branch="false" />
+            <line number="99" hits="0" branch="false" />
+            <line number="101" hits="0" branch="false" />
+            <line number="102" hits="0" branch="false" />
+            <line number="104" hits="0" branch="false" />
+            <line number="106" hits="0" branch="false" />
+            <line number="107" hits="0" branch="false" />
+            <line number="108" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="Program" filename="C:\Users\menor\OneDrive\Documents\Projects\lightning-alert\src\Program.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;Main&gt;$" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="4" hits="0" branch="false" />
+                <line number="5" hits="0" branch="false" />
+                <line number="6" hits="0" branch="false" />
+                <line number="7" hits="0" branch="false" />
+                <line number="8" hits="0" branch="false" />
+                <line number="9" hits="0" branch="false" />
+                <line number="10" hits="0" branch="false" />
+                <line number="11" hits="0" branch="false" />
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="4" hits="0" branch="false" />
+            <line number="5" hits="0" branch="false" />
+            <line number="6" hits="0" branch="false" />
+            <line number="7" hits="0" branch="false" />
+            <line number="8" hits="0" branch="false" />
+            <line number="9" hits="0" branch="false" />
+            <line number="10" hits="0" branch="false" />
+            <line number="11" hits="0" branch="false" />
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="lightning-alert-tests" line-rate="0.357142857142857" branch-rate="1" complexity="6">
+      <classes>
+        <class name="AutoGeneratedProgram" filename="C:\Users\menor\.nuget\packages\microsoft.net.test.sdk\17.1.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="Main" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="4" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="4" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="lightning_alert_tests.ProcessLightningAlertDataTests" filename="C:\Users\menor\OneDrive\Documents\Projects\lightning-alert\lightning-alert-tests\ProcessLightningAlertDataTests.cs" line-rate="0.365853658536585" branch-rate="1" complexity="5">
+          <methods>
+            <method name="InitConfiguration" signature="()" line-rate="0.714285714285714" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="3" branch="false" />
+                <line number="15" hits="3" branch="false" />
+                <line number="16" hits="3" branch="false" />
+                <line number="17" hits="3" branch="false" />
+                <line number="18" hits="3" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Test_ReadLightningAlertData_AllDataValid" signature="()" line-rate="0.2" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="1" branch="false" />
+                <line number="27" hits="1" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+                <line number="40" hits="0" branch="false" />
+                <line number="44" hits="0" branch="false" />
+                <line number="46" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Test_ReadLightningAlertData_AllDataInvalid" signature="()" line-rate="0.2" branch-rate="1" complexity="1">
+              <lines>
+                <line number="50" hits="1" branch="false" />
+                <line number="52" hits="1" branch="false" />
+                <line number="53" hits="0" branch="false" />
+                <line number="54" hits="0" branch="false" />
+                <line number="55" hits="0" branch="false" />
+                <line number="60" hits="0" branch="false" />
+                <line number="61" hits="0" branch="false" />
+                <line number="65" hits="0" branch="false" />
+                <line number="69" hits="0" branch="false" />
+                <line number="71" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Test_ReadLightningAlertData_FlashTypeHeartbeat" signature="()" line-rate="0.2" branch-rate="1" complexity="1">
+              <lines>
+                <line number="75" hits="1" branch="false" />
+                <line number="77" hits="1" branch="false" />
+                <line number="78" hits="0" branch="false" />
+                <line number="79" hits="0" branch="false" />
+                <line number="80" hits="0" branch="false" />
+                <line number="85" hits="0" branch="false" />
+                <line number="86" hits="0" branch="false" />
+                <line number="90" hits="0" branch="false" />
+                <line number="94" hits="0" branch="false" />
+                <line number="96" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Test_ReadLightningAlertData_ValidQuadKey" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="104" hits="3" branch="false" />
+                <line number="110" hits="3" branch="false" />
+                <line number="114" hits="3" branch="false" />
+                <line number="116" hits="3" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="3" branch="false" />
+            <line number="15" hits="3" branch="false" />
+            <line number="16" hits="3" branch="false" />
+            <line number="17" hits="3" branch="false" />
+            <line number="18" hits="3" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="25" hits="1" branch="false" />
+            <line number="27" hits="1" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+            <line number="44" hits="0" branch="false" />
+            <line number="46" hits="0" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="52" hits="1" branch="false" />
+            <line number="53" hits="0" branch="false" />
+            <line number="54" hits="0" branch="false" />
+            <line number="55" hits="0" branch="false" />
+            <line number="60" hits="0" branch="false" />
+            <line number="61" hits="0" branch="false" />
+            <line number="65" hits="0" branch="false" />
+            <line number="69" hits="0" branch="false" />
+            <line number="71" hits="0" branch="false" />
+            <line number="75" hits="1" branch="false" />
+            <line number="77" hits="1" branch="false" />
+            <line number="78" hits="0" branch="false" />
+            <line number="79" hits="0" branch="false" />
+            <line number="80" hits="0" branch="false" />
+            <line number="85" hits="0" branch="false" />
+            <line number="86" hits="0" branch="false" />
+            <line number="90" hits="0" branch="false" />
+            <line number="94" hits="0" branch="false" />
+            <line number="96" hits="0" branch="false" />
+            <line number="104" hits="3" branch="false" />
+            <line number="110" hits="3" branch="false" />
+            <line number="114" hits="3" branch="false" />
+            <line number="116" hits="3" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
